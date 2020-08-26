@@ -1,27 +1,32 @@
 body {
   background: black;
-  margin-top: 130px;
+  margin-top: 140px;
+  font-family: Arial Black;
 }
 
 ul {
   background: white;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgrey;
 }
 
 .octodex {
   display: flex;
   justify-content: center;
-  justify-content: space-around;
+  position: relative;
+  padding-left: 0;
 }
 
 .octocat {
-  width: 50%;
+  width: 45%;
   list-style: none;
   margin: 5px 10px;
 }
 
 .octocat img {
-  width: 95%;
+  display: flex;
+  width: 100%;
   border: 1px solid lightgrey;
   border-radius: 5px;
 }
@@ -29,24 +34,27 @@ ul {
 span {
   color: grey;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
+  margin: auto;
 }
 
 a {
   color: black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
 }
 
 .image-footer {
   display: flex;
-  border: 1px solid black;
-  justify-content: space-between;
+  align-content: center;
+  width: 100%;
 }
 
 .image-number {
   display: flex;
+  margin-left: 0;
+  margin-top: 20px;
   color: lightgrey;
   font-weight: bold;
   font-size: 20px;
@@ -58,23 +66,31 @@ a {
 
 .image-caption {
   display: flex;
-  margin-left: 80px;
-  margin-right: 80px;
+  justify-items: flex-end;
 }
 
-.authors img {
-  width: 30%;
+.image-caption span {
+  display: flex;
+  margin-top: 23px;
 }
 
-ul .authors {
-  margin-left: -1px;
+.image-caption a {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-bottom: 2px;
 }
 
 .authors li {
-  list-style: none;
+  display: flex;
+  margin-top: -10px;
 }
 
-.octocat .image-footer {
-  justify-content: space-between;
+.authors li img {
   display: flex;
+  max-width: 25px;
+  max-height: 25px;
+  border: 1px solid green;
+  margin-right: 5px;
 }
